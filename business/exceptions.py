@@ -1,0 +1,2 @@
+class NaoPodeDividirPorZeroError(ZeroDivisionError):
+    pass

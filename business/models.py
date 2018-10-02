@@ -1,3 +1,5 @@
+from exceptions import *
+
 class Calculadora():
     def soma(self, a, b):
         return a + b
@@ -9,4 +11,7 @@ class Calculadora():
         return a * b
     
     def divide(self, a, b):
-        return a / b
+        try:
+            return a / b
+        except ZeroDivisionError:
+            raise NaoPodeDividirPorZeroError()
