@@ -1,4 +1,4 @@
-from exceptions import *
+from .exceptions import *
 
 class Calculadora():
     def soma(self, a, b):

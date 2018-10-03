@@ -1,5 +1,5 @@
 import pytest
-from models import Calculadora
+from .models import Calculadora
 
 def test_soma():
     assert Calculadora().soma(2, 2) == 4
